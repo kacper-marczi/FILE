@@ -1,0 +1,31 @@
+<div id="header">
+    <a href="./upload">UPLOAD</a>
+    <a href="./filemanager">FILEMANAGER</a>
+    <a href="./info">INFO</a>
+</div>
+<div class="wrapper">
+    <div id="menu">
+        FILEMANAGER
+        <br>
+        <a href="/clearFilemanagerAll">Usuń wszystko</a>
+    </div>
+    <div id="main">
+        <table>
+            <tr>
+                <th>NUMER</th>
+                <th>OBRAZ</th>
+                <th>NAZWA</th>
+                <th>ROZMIAR</th>
+                <th>TYP</th>
+                <th>USUŃ</th>
+                <th>INFO</th>
+                <th>POBIERZ</th>
+            </tr>
+            {{#each datatable}}
+            <tr>
+                {{> filedata}}
+            </tr>
+            {{/each}}
+        </table>
+    </div>
+</div>
